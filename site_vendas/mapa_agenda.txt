@@ -1,0 +1,5 @@
+1º dia - 06/04/2026
+Criar o front end, não precisa ser funcional, apenas com as informações da XPC informática, com pelo menos:
+- logo
+- aquela barra vermelha e preta com informações da loja
+- um menu "meio worten" com as categorias

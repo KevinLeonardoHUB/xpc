@@ -1,0 +1,9 @@
+{
+  "name": "xpc/site-vendas",
+  "description": "Loja PHP com admin, login e recuperação de senha",
+  "type": "project",
+  "require": {
+    "php": ">=8.0",
+    "phpmailer/phpmailer": "^6.9"
+  }
+}

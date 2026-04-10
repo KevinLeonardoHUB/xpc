@@ -1,0 +1,526 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Administrador",
+            "email": "admin@admin.com",
+            "password": "$2y$12$zmth3kEMGbv.UB83nMmaFuHHYVpzrGKTz.usgkHsFqkE5i75opvzG",
+            "role": "admin",
+            "created_at": "2026-04-09 17:26:46"
+        },
+        {
+            "name": "Teste",
+            "email": "teste@example.com",
+            "password": "$2y$12$tCg3.JuAUJvRu0RhdDx15uSTppVC4.Sn1vy.ZrCmZNPiEO1srzcPC",
+            "role": "customer",
+            "created_at": "2026-04-09 17:26:46",
+            "id": 2
+        }
+    ],
+    "categories": [
+        {
+            "id": 1,
+            "name": "Componentes",
+            "slug": "componentes",
+            "created_at": "2026-04-09 17:26:46",
+            "icon": "fa-cogs"
+        },
+        {
+            "id": 2,
+            "name": "Recondicionados",
+            "slug": "recondicionados",
+            "created_at": "2026-04-09 17:26:46",
+            "icon": "fa-laptop"
+        },
+        {
+            "id": 3,
+            "name": "Consumíveis",
+            "slug": "consumiveis",
+            "created_at": "2026-04-09 17:26:46",
+            "icon": "fa-print"
+        },
+        {
+            "id": 4,
+            "name": "Servidores",
+            "slug": "servidores",
+            "created_at": "2026-04-09 17:26:46",
+            "icon": "fa-server"
+        },
+        {
+            "id": 5,
+            "name": "Acessórios",
+            "slug": "acessorios",
+            "created_at": "2026-04-09 17:26:46",
+            "icon": "fa-keyboard-o"
+        },
+        {
+            "id": 6,
+            "name": "Armazenamento",
+            "slug": "armazenamento",
+            "created_at": "2026-04-09 17:26:46",
+            "icon": "fa-hdd-o"
+        },
+        {
+            "id": 7,
+            "name": "Cabos e adaptadores",
+            "slug": "cabos-e-adaptadores",
+            "created_at": "2026-04-09 17:26:46",
+            "icon": "fa-plug"
+        },
+        {
+            "id": 8,
+            "name": "Redes",
+            "slug": "redes",
+            "created_at": "2026-04-09 17:26:46",
+            "icon": "fa-wifi"
+        },
+        {
+            "id": 9,
+            "name": "Outros",
+            "slug": "outros",
+            "created_at": "2026-04-09 17:26:46",
+            "icon": "fa-ellipsis-h"
+        }
+    ],
+    "products": [
+        {
+            "id": 1,
+            "category_id": 1,
+            "name": "Produto teste 1 - Componentes",
+            "slug": "produto-teste-1-componentes-2",
+            "description": "Produto de demonstração para a categoria Componentes.",
+            "price": 120.9,
+            "stock": 5,
+            "is_active": 1,
+            "created_at": "2026-04-09 17:26:46",
+            "image": "",
+            "is_featured": 0
+        },
+        {
+            "id": 2,
+            "category_id": 1,
+            "name": "Produto teste 2 - Componentes",
+            "slug": "produto-teste-2-componentes-3",
+            "description": "Produto de demonstração para a categoria Componentes.",
+            "price": 82.9,
+            "stock": 25,
+            "is_active": 1,
+            "created_at": "2026-04-09 17:26:46",
+            "image": "",
+            "is_featured": 0
+        },
+        {
+            "id": 3,
+            "category_id": 1,
+            "name": "Produto teste 3 - Componentes",
+            "slug": "produto-teste-3-componentes-4",
+            "description": "Produto de demonstração para a categoria Componentes.",
+            "price": 163.9,
+            "stock": 13,
+            "is_active": 1,
+            "created_at": "2026-04-09 17:26:46",
+            "image": "",
+            "is_featured": 0
+        },
+        {
+            "id": 4,
+            "category_id": 2,
+            "name": "Produto teste 1 - Recondicionados",
+            "slug": "produto-teste-1-recondicionados-5",
+            "description": "Produto de demonstração para a categoria Recondicionados.",
+            "price": 169.9,
+            "stock": 24,
+            "is_active": 1,
+            "created_at": "2026-04-09 17:26:46",
+            "image": "",
+            "is_featured": 0
+        },
+        {
+            "id": 5,
+            "category_id": 2,
+            "name": "Produto teste 2 - Recondicionados",
+            "slug": "produto-teste-2-recondicionados-6",
+            "description": "Produto de demonstração para a categoria Recondicionados.",
+            "price": 63.9,
+            "stock": 7,
+            "is_active": 1,
+            "created_at": "2026-04-09 17:26:46",
+            "image": "",
+            "is_featured": 0
+        },
+        {
+            "id": 6,
+            "category_id": 2,
+            "name": "Produto teste 3 - Recondicionados",
+            "slug": "produto-teste-3-recondicionados-7",
+            "description": "Produto de demonstração para a categoria Recondicionados.",
+            "price": 120.9,
+            "stock": 7,
+            "is_active": 1,
+            "created_at": "2026-04-09 17:26:46",
+            "image": "",
+            "is_featured": 0
+        },
+        {
+            "id": 7,
+            "category_id": 3,
+            "name": "Produto teste 1 - Consumíveis",
+            "slug": "produto-teste-1-consumiveis-8",
+            "description": "Produto de demonstração para a categoria Consumíveis.",
+            "price": 61.9,
+            "stock": 19,
+            "is_active": 1,
+            "created_at": "2026-04-09 17:26:46",
+            "image": "",
+            "is_featured": 0
+        },
+        {
+            "id": 8,
+            "category_id": 3,
+            "name": "Produto teste 2 - Consumíveis",
+            "slug": "produto-teste-2-consumiveis-9",
+            "description": "Produto de demonstração para a categoria Consumíveis.",
+            "price": 163.9,
+            "stock": 23,
+            "is_active": 1,
+            "created_at": "2026-04-09 17:26:46",
+            "image": "",
+            "is_featured": 0
+        },
+        {
+            "id": 9,
+            "category_id": 3,
+            "name": "Produto teste 3 - Consumíveis",
+            "slug": "produto-teste-3-consumiveis-10",
+            "description": "Produto de demonstração para a categoria Consumíveis.",
+            "price": 175.9,
+            "stock": 29,
+            "is_active": 1,
+            "created_at": "2026-04-09 17:26:46",
+            "image": "",
+            "is_featured": 0
+        },
+        {
+            "id": 10,
+            "category_id": 4,
+            "name": "Produto teste 1 - Servidores",
+            "slug": "produto-teste-1-servidores-11",
+            "description": "Produto de demonstração para a categoria Servidores.",
+            "price": 138.9,
+            "stock": 28,
+            "is_active": 1,
+            "created_at": "2026-04-09 17:26:46",
+            "image": "",
+            "is_featured": 0
+        },
+        {
+            "id": 11,
+            "category_id": 4,
+            "name": "Produto teste 2 - Servidores",
+            "slug": "produto-teste-2-servidores-12",
+            "description": "Produto de demonstração para a categoria Servidores.",
+            "price": 55.9,
+            "stock": 8,
+            "is_active": 1,
+            "created_at": "2026-04-09 17:26:46",
+            "image": "",
+            "is_featured": 0
+        },
+        {
+            "id": 12,
+            "category_id": 4,
+            "name": "Produto teste 3 - Servidores",
+            "slug": "produto-teste-3-servidores-13",
+            "description": "Produto de demonstração para a categoria Servidores.",
+            "price": 39.9,
+            "stock": 18,
+            "is_active": 1,
+            "created_at": "2026-04-09 17:26:46",
+            "image": "",
+            "is_featured": 0
+        },
+        {
+            "id": 13,
+            "category_id": 5,
+            "name": "Produto teste 1 - Acessórios",
+            "slug": "produto-teste-1-acessorios-14",
+            "description": "Produto de demonstração para a categoria Acessórios.",
+            "price": 141.9,
+            "stock": 23,
+            "is_active": 1,
+            "created_at": "2026-04-09 17:26:46",
+            "image": "",
+            "is_featured": 0
+        },
+        {
+            "id": 14,
+            "category_id": 5,
+            "name": "Produto teste 2 - Acessórios",
+            "slug": "produto-teste-2-acessorios-15",
+            "description": "Produto de demonstração para a categoria Acessórios.",
+            "price": 163.9,
+            "stock": 5,
+            "is_active": 1,
+            "created_at": "2026-04-09 17:26:46",
+            "image": "",
+            "is_featured": 0
+        },
+        {
+            "id": 15,
+            "category_id": 5,
+            "name": "Produto teste 3 - Acessórios",
+            "slug": "produto-teste-3-acessorios-16",
+            "description": "Produto de demonstração para a categoria Acessórios.",
+            "price": 143.9,
+            "stock": 6,
+            "is_active": 1,
+            "created_at": "2026-04-09 17:26:46",
+            "image": "",
+            "is_featured": 0
+        },
+        {
+            "id": 16,
+            "category_id": 6,
+            "name": "Produto teste 1 - Armazenamento",
+            "slug": "produto-teste-1-armazenamento-17",
+            "description": "Produto de demonstração para a categoria Armazenamento.",
+            "price": 73.9,
+            "stock": 11,
+            "is_active": 1,
+            "created_at": "2026-04-09 17:26:46",
+            "image": "",
+            "is_featured": 0
+        },
+        {
+            "id": 17,
+            "category_id": 6,
+            "name": "Produto teste 2 - Armazenamento",
+            "slug": "produto-teste-2-armazenamento-18",
+            "description": "Produto de demonstração para a categoria Armazenamento.",
+            "price": 9.9,
+            "stock": 13,
+            "is_active": 1,
+            "created_at": "2026-04-09 17:26:46",
+            "image": "",
+            "is_featured": 0
+        },
+        {
+            "id": 18,
+            "category_id": 6,
+            "name": "Produto teste 3 - Armazenamento",
+            "slug": "produto-teste-3-armazenamento-19",
+            "description": "Produto de demonstração para a categoria Armazenamento.",
+            "price": 51.9,
+            "stock": 6,
+            "is_active": 1,
+            "created_at": "2026-04-09 17:26:46",
+            "image": "",
+            "is_featured": 0
+        },
+        {
+            "id": 19,
+            "category_id": 7,
+            "name": "Produto teste 1 - Cabos e adaptadores",
+            "slug": "produto-teste-1-cabos-e-adaptadores-20",
+            "description": "Produto de demonstração para a categoria Cabos e adaptadores.",
+            "price": 80.9,
+            "stock": 22,
+            "is_active": 1,
+            "created_at": "2026-04-09 17:26:46",
+            "image": "",
+            "is_featured": 0
+        },
+        {
+            "id": 20,
+            "category_id": 7,
+            "name": "Produto teste 2 - Cabos e adaptadores",
+            "slug": "produto-teste-2-cabos-e-adaptadores-21",
+            "description": "Produto de demonstração para a categoria Cabos e adaptadores.",
+            "price": 179.9,
+            "stock": 29,
+            "is_active": 1,
+            "created_at": "2026-04-09 17:26:46",
+            "image": "",
+            "is_featured": 0
+        },
+        {
+            "id": 21,
+            "category_id": 7,
+            "name": "Produto teste 3 - Cabos e adaptadores",
+            "slug": "produto-teste-3-cabos-e-adaptadores-22",
+            "description": "Produto de demonstração para a categoria Cabos e adaptadores.",
+            "price": 180.9,
+            "stock": 12,
+            "is_active": 1,
+            "created_at": "2026-04-09 17:26:46",
+            "image": "",
+            "is_featured": 0
+        },
+        {
+            "id": 22,
+            "category_id": 8,
+            "name": "Produto teste 1 - Redes",
+            "slug": "produto-teste-1-redes-23",
+            "description": "Produto de demonstração para a categoria Redes.",
+            "price": 37.9,
+            "stock": 17,
+            "is_active": 1,
+            "created_at": "2026-04-09 17:26:46",
+            "image": "",
+            "is_featured": 0
+        },
+        {
+            "id": 23,
+            "category_id": 8,
+            "name": "Produto teste 2 - Redes",
+            "slug": "produto-teste-2-redes-24",
+            "description": "Produto de demonstração para a categoria Redes.",
+            "price": 81.9,
+            "stock": 28,
+            "is_active": 1,
+            "created_at": "2026-04-09 17:26:46",
+            "image": "",
+            "is_featured": 0
+        },
+        {
+            "id": 24,
+            "category_id": 8,
+            "name": "Produto teste 3 - Redes",
+            "slug": "produto-teste-3-redes-25",
+            "description": "Produto de demonstração para a categoria Redes.",
+            "price": 84.9,
+            "stock": 22,
+            "is_active": 1,
+            "created_at": "2026-04-09 17:26:46",
+            "image": "",
+            "is_featured": 0
+        },
+        {
+            "id": 25,
+            "category_id": 9,
+            "name": "Produto teste 1 - Outros",
+            "slug": "produto-teste-1-outros-26",
+            "description": "Produto de demonstração para a categoria Outros.",
+            "price": 137.9,
+            "stock": 24,
+            "is_active": 1,
+            "created_at": "2026-04-09 17:26:46",
+            "image": "",
+            "is_featured": 0
+        },
+        {
+            "id": 26,
+            "category_id": 9,
+            "name": "Produto teste 2 - Outros",
+            "slug": "produto-teste-2-outros-27",
+            "description": "Produto de demonstração para a categoria Outros.",
+            "price": 98.9,
+            "stock": 28,
+            "is_active": 1,
+            "created_at": "2026-04-09 17:26:46",
+            "image": "",
+            "is_featured": 0
+        },
+        {
+            "id": 27,
+            "category_id": 9,
+            "name": "Produto teste 3 - Outros",
+            "slug": "produto-teste-3-outros-28",
+            "description": "Produto de demonstração para a categoria Outros.",
+            "price": 11.9,
+            "stock": 15,
+            "is_active": 1,
+            "created_at": "2026-04-09 17:26:46",
+            "image": "",
+            "is_featured": 0
+        },
+        {
+            "category_id": 6,
+            "name": "Teste",
+            "slug": "teste",
+            "description": "sim",
+            "price": 2,
+            "stock": 0,
+            "image": "",
+            "is_active": 1,
+            "is_featured": 1,
+            "created_at": "2026-04-10 18:19:48",
+            "id": 28
+        }
+    ],
+    "orders": [
+        {
+            "id": 1,
+            "user_id": 2,
+            "customer_name": "Teste",
+            "customer_email": "teste@example.com",
+            "customer_phone": "1",
+            "address": "Rua A",
+            "notes": "ok",
+            "total": 241.8,
+            "status": "novo",
+            "created_at": "2026-04-09 17:26:46"
+        }
+    ],
+    "order_items": [
+        {
+            "id": 1,
+            "order_id": 1,
+            "product_id": 1,
+            "product_name": "Produto teste 1 - Componentes",
+            "quantity": 2,
+            "unit_price": 120.9,
+            "subtotal": 241.8
+        }
+    ],
+    "password_resets": [],
+    "service_requests": [],
+    "counters": {
+        "users": 3,
+        "categories": 10,
+        "products": 29,
+        "orders": 2,
+        "order_items": 2,
+        "password_resets": 1,
+        "service_requests": 1,
+        "services": 5
+    },
+    "services": [
+        {
+            "id": 1,
+            "name": "Diagnóstico técnico",
+            "slug": "diagnostico-tecnico",
+            "description": "Análise de falhas e identificação de problemas em equipamentos e sistemas.",
+            "image": "",
+            "is_active": 1,
+            "created_at": "2026-04-10 13:35:58"
+        },
+        {
+            "id": 2,
+            "name": "Reparação de computadores",
+            "slug": "reparacao-de-computadores",
+            "description": "Assistência técnica para desktops e portáteis com avaliação e orçamento personalizado.",
+            "image": "",
+            "is_active": 1,
+            "created_at": "2026-04-10 13:35:58"
+        },
+        {
+            "id": 3,
+            "name": "Otimização de sistemas",
+            "slug": "otimizacao-de-sistemas",
+            "description": "Melhoria de desempenho, configuração e atualização para uso pessoal ou profissional.",
+            "image": "",
+            "is_active": 1,
+            "created_at": "2026-04-10 13:35:58"
+        },
+        {
+            "id": 4,
+            "name": "Servidores e recuperação",
+            "slug": "servidores-e-recuperacao",
+            "description": "Suporte técnico, avaliação e recuperação de falhas em ambientes mais exigentes.",
+            "image": "",
+            "is_active": 1,
+            "created_at": "2026-04-10 13:35:58"
+        }
+    ]
+}

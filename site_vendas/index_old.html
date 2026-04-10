@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XPC Informática</title>
+
+    <link rel="stylesheet" href="/site_vendas/misc/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+    <link rel="icon" href="/site_vendas/misc/img/symbol_transparent.png">
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="topbar-inner">
+        <div class="topbar-left">
+          <a href="mailto:info@xpc.pt">info@xpc.pt</a>
+
+          <span>
+            <i class="fa fa-street-view"></i>Rua de Entrecampos, 64 A
+          </span>
+
+          <a href="tel:+351918689962">
+            <i class="fa fa-phone"></i>+351 91 868 9962
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <header class="bar">
+      <div class="bar-container">
+        <div class="logo">
+          <a href="#inicio">
+            <img src="misc/img/logo.webp" alt="XPC Informática" />
+          </a>
+        </div>
+
+        <nav class="menu">
+          <a href="#inicio">Início</a>
+          <a href="#categorias">Categorias</a>
+          <a href="#produtos">Produtos</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#contactos">Contactos</a>
+
+          <div class="menu-item submenu-conta">
+            <a href="#" class="menu-botao">Conta</a>
+
+            <div class="dropdown">
+              <a href="#">Login</a>
+              <a href="#">Registro</a>
+            </div>
+          </div>
+
+          <div class="menu-item submenu-carrinho">
+            <a href="#produtos" class="menu-botao menu-botao-destaque">
+              Ver produtos
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-container">
+          <div class="hero-text">
+            <span class="hero-tag">XPC Informática em Entrecampos</span>
+            <h1>Serviços técnicos, produtos e soluções de informática</h1>
+            <p>
+              A XPC Informática disponibiliza serviços de reparação,
+              componentes, equipamentos recondicionados, consumíveis e outros
+              produtos para clientes particulares e empresas.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#produtos" class="btn-primary">
+                Ver produtos
+              </a>
+              <a href="#servicos" class="btn-secondary">Pedir orçamento</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section categorias-section" id="categorias">
+        <div class="section-container">
+          <div class="section-header">
+            <span class="section-subtitle">Explore as nossas categorias</span>
+            <h2>Escolha uma categoria e veja os produtos</h2>
+            <p>
+              Mantivemos o visual do site e alterámos esta secção para uma
+              experiência de venda, com acesso direto às listagens de produtos.
+            </p>
+          </div>
+
+          <div class="categorias-grid">
+            <a href="#cat-componentes" class="categoria-item">
+              <div class="categoria-icon">
+                <i class="fa fa-cogs"></i>
+              </div>
+              <span>Componentes</span>
+            </a>
+
+            <a href="#cat-recondicionados" class="categoria-item">
+              <div class="categoria-icon">
+                <i class="fa fa-laptop"></i>
+              </div>
+              <span>Recondicionados</span>
+            </a>
+
+            <a href="#cat-consumiveis" class="categoria-item">
+              <div class="categoria-icon">
+                <i class="fa fa-print"></i>
+              </div>
+              <span>Consumíveis</span>
+            </a>
+
+            <a href="#cat-servidores" class="categoria-item">
+              <div class="categoria-icon">
+                <i class="fa fa-server"></i>
+              </div>
+              <span>Servidores</span>
+            </a>
+
+            <a href="#cat-acessorios" class="categoria-item">
+              <div class="categoria-icon">
+                <i class="fa fa-keyboard-o"></i>
+              </div>
+              <span>Acessórios</span>
+            </a>
+
+            <a href="#cat-armazenamento" class="categoria-item">
+              <div class="categoria-icon">
+                <i class="fa fa-hdd-o"></i>
+              </div>
+              <span>Armazenamento</span>
+            </a>
+
+            <a href="#cat-cabos" class="categoria-item">
+              <div class="categoria-icon">
+                <i class="fa fa-plug"></i>
+              </div>
+              <span>Cabos e adaptadores</span>
+            </a>
+
+            <a href="#cat-redes" class="categoria-item">
+              <div class="categoria-icon">
+                <i class="fa fa-wifi"></i>
+              </div>
+              <span>Redes</span>
+            </a>
+
+            <a href="#cat-outros" class="categoria-item">
+              <div class="categoria-icon">
+                <i class="fa fa-ellipsis-h"></i>
+              </div>
+              <span>Outros</span>
+            </a>
+
+            <a href="#servicos" class="categoria-item categoria-item-servico">
+              <div class="categoria-icon">
+                <i class="fa fa-wrench"></i>
+              </div>
+              <span>Serviços e orçamento</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-light produtos-section" id="produtos">
+        <div class="section-container">
+          <div class="section-header">
+            <span class="section-subtitle">Loja</span>
+            <h2>Produtos em destaque por categoria</h2>
+            <p>
+              Nesta versão, apenas os serviços mantêm pedido de orçamento. As
+              categorias de produtos funcionam como uma loja normal.
+            </p>
+          </div>
+
+          <div class="product-category" id="cat-componentes">
+            <div class="product-category-header">
+              <h3>Componentes</h3>
+              <a href="#categorias">Voltar às categorias</a>
+            </div>
+            <div class="products-grid">
+              <article class="product-card"><span class="product-badge">Produto teste</span><h4>Memória RAM DDR4 16GB</h4><p>Componente de teste para demonstração da loja.</p><div class="product-meta"><strong>39,90€</strong><button>Comprar</button></div></article>
+              <article class="product-card"><span class="product-badge">Produto teste</span><h4>Fonte ATX 650W</h4><p>Produto de exemplo sem imagem, apenas para estrutura.</p><div class="product-meta"><strong>64,90€</strong><button>Comprar</button></div></article>
+              <article class="product-card"><span class="product-badge">Produto teste</span><h4>Motherboard B550</h4><p>Exemplo de artigo inserido na categoria de componentes.</p><div class="product-meta"><strong>119,90€</strong><button>Comprar</button></div></article>
+            </div>
+          </div>
+
+          <div class="product-category" id="cat-recondicionados">
+            <div class="product-category-header">
+              <h3>Recondicionados</h3>
+              <a href="#categorias">Voltar às categorias</a>
+            </div>
+            <div class="products-grid">
+              <article class="product-card"><span class="product-badge">Produto teste</span><h4>Portátil Lenovo ThinkPad</h4><p>Produto recondicionado de demonstração.</p><div class="product-meta"><strong>279,90€</strong><button>Comprar</button></div></article>
+              <article class="product-card"><span class="product-badge">Produto teste</span><h4>Desktop HP ProDesk</h4><p>Modelo de exemplo para exposição na loja.</p><div class="product-meta"><strong>249,90€</strong><button>Comprar</button></div></article>
+              <article class="product-card"><span class="product-badge">Produto teste</span><h4>Monitor 24" Full HD</h4><p>Artigo ilustrativo sem necessidade de fotografia.</p><div class="product-meta"><strong>89,90€</strong><button>Comprar</button></div></article>
+            </div>
+          </div>
+
+          <div class="product-category" id="cat-consumiveis">
+            <div class="product-category-header">
+              <h3>Consumíveis</h3>
+              <a href="#categorias">Voltar às categorias</a>
+            </div>
+            <div class="products-grid">
+              <article class="product-card"><span class="product-badge">Produto teste</span><h4>Tinteiro Preto XL</h4><p>Consumível de teste para impressoras compatíveis.</p><div class="product-meta"><strong>24,90€</strong><button>Comprar</button></div></article>
+              <article class="product-card"><span class="product-badge">Produto teste</span><h4>Toner Laser Universal</h4><p>Item de demonstração para a categoria consumíveis.</p><div class="product-meta"><strong>34,90€</strong><button>Comprar</button></div></article>
+              <article class="product-card"><span class="product-badge">Produto teste</span><h4>Papel A4 500 folhas</h4><p>Produto teste para completar a secção.</p><div class="product-meta"><strong>5,90€</strong><button>Comprar</button></div></article>
+            </div>
+          </div>
+
+          <div class="product-category" id="cat-servidores">
+            <div class="product-category-header">
+              <h3>Servidores</h3>
+              <a href="#categorias">Voltar às categorias</a>
+            </div>
+            <div class="products-grid">
+              <article class="product-card"><span class="product-badge">Produto teste</span><h4>Servidor Rack 1U</h4><p>Exemplo de produto empresarial para a montra.</p><div class="product-meta"><strong>899,90€</strong><button>Comprar</button></div></article>
+              <article class="product-card"><span class="product-badge">Produto teste</span><h4>Servidor Torre SMB</h4><p>Solução de teste para pequenas empresas.</p><div class="product-meta"><strong>749,90€</strong><button>Comprar</button></div></article>
+              <article class="product-card"><span class="product-badge">Produto teste</span><h4>UPS 1500VA</h4><p>Item relacionado com infraestrutura e continuidade.</p><div class="product-meta"><strong>189,90€</strong><button>Comprar</button></div></article>
+            </div>
+          </div>
+
+          <div class="product-category" id="cat-acessorios">
+            <div class="product-category-header">
+              <h3>Acessórios</h3>
+              <a href="#categorias">Voltar às categorias</a>
+            </div>
+            <div class="products-grid">
+              <article class="product-card"><span class="product-badge">Produto teste</span><h4>Teclado USB</h4><p>Produto demonstrativo para acessórios.</p><div class="product-meta"><strong>14,90€</strong><button>Comprar</button></div></article>
+              <article class="product-card"><span class="product-badge">Produto teste</span><h4>Rato Wireless</h4><p>Artigo exemplo para a loja online.</p><div class="product-meta"><strong>12,90€</strong><button>Comprar</button></div></article>
+              <article class="product-card"><span class="product-badge">Produto teste</span><h4>Webcam Full HD</h4><p>Produto teste sem imagem.</p><div class="product-meta"><strong>29,90€</strong><button>Comprar</button></div></article>
+            </div>
+          </div>
+
+          <div class="product-category" id="cat-armazenamento">
+            <div class="product-category-header">
+              <h3>Armazenamento</h3>
+              <a href="#categorias">Voltar às categorias</a>
+            </div>
+            <div class="products-grid">
+              <article class="product-card"><span class="product-badge">Produto teste</span><h4>SSD 500GB</h4><p>Produto de exemplo para mostrar listagem.</p><div class="product-meta"><strong>49,90€</strong><button>Comprar</button></div></article>
+              <article class="product-card"><span class="product-badge">Produto teste</span><h4>Disco Externo 1TB</h4><p>Produto teste incluído na categoria armazenamento.</p><div class="product-meta"><strong>59,90€</strong><button>Comprar</button></div></article>
+              <article class="product-card"><span class="product-badge">Produto teste</span><h4>Pen USB 64GB</h4><p>Artigo simples para completar a montra.</p><div class="product-meta"><strong>9,90€</strong><button>Comprar</button></div></article>
+            </div>
+          </div>
+
+          <div class="product-category" id="cat-cabos">
+            <div class="product-category-header">
+              <h3>Cabos e adaptadores</h3>
+              <a href="#categorias">Voltar às categorias</a>
+            </div>
+            <div class="products-grid">
+              <article class="product-card"><span class="product-badge">Produto teste</span><h4>Cabo HDMI 2m</h4><p>Produto teste na secção de cabos.</p><div class="product-meta"><strong>7,90€</strong><button>Comprar</button></div></article>
+              <article class="product-card"><span class="product-badge">Produto teste</span><h4>Adaptador USB-C</h4><p>Modelo de demonstração sem imagem.</p><div class="product-meta"><strong>11,90€</strong><button>Comprar</button></div></article>
+              <article class="product-card"><span class="product-badge">Produto teste</span><h4>Cabo de Rede Cat6</h4><p>Produto de exemplo para a loja.</p><div class="product-meta"><strong>4,90€</strong><button>Comprar</button></div></article>
+            </div>
+          </div>
+
+          <div class="product-category" id="cat-redes">
+            <div class="product-category-header">
+              <h3>Redes</h3>
+              <a href="#categorias">Voltar às categorias</a>
+            </div>
+            <div class="products-grid">
+              <article class="product-card"><span class="product-badge">Produto teste</span><h4>Router Wi-Fi 6</h4><p>Equipamento de rede de demonstração.</p><div class="product-meta"><strong>79,90€</strong><button>Comprar</button></div></article>
+              <article class="product-card"><span class="product-badge">Produto teste</span><h4>Switch 8 portas</h4><p>Produto teste para uso empresarial ou doméstico.</p><div class="product-meta"><strong>34,90€</strong><button>Comprar</button></div></article>
+              <article class="product-card"><span class="product-badge">Produto teste</span><h4>Access Point</h4><p>Artigo demonstrativo para rede sem fios.</p><div class="product-meta"><strong>54,90€</strong><button>Comprar</button></div></article>
+            </div>
+          </div>
+
+          <div class="product-category" id="cat-outros">
+            <div class="product-category-header">
+              <h3>Outros</h3>
+              <a href="#categorias">Voltar às categorias</a>
+            </div>
+            <div class="products-grid">
+              <article class="product-card"><span class="product-badge">Produto teste</span><h4>Suporte para portátil</h4><p>Produto simples para completar a categoria.</p><div class="product-meta"><strong>19,90€</strong><button>Comprar</button></div></article>
+              <article class="product-card"><span class="product-badge">Produto teste</span><h4>Kit de limpeza</h4><p>Artigo teste de uso geral.</p><div class="product-meta"><strong>8,90€</strong><button>Comprar</button></div></article>
+              <article class="product-card"><span class="product-badge">Produto teste</span><h4>Base refrigeradora</h4><p>Produto demonstrativo para a loja.</p><div class="product-meta"><strong>22,90€</strong><button>Comprar</button></div></article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-light" id="servicos">
+        <div class="section-container">
+          <div class="section-header">
+            <span class="section-subtitle">Assistência técnica</span>
+            <h2>Soluções especializadas em reparação e suporte</h2>
+            <p>
+              Aqui continua a lógica de orçamento. Os pedidos por orçamento ficam
+              apenas na área de serviços.
+            </p>
+          </div>
+
+          <div class="services-grid">
+            <a href="#" class="service-card abrir-orcamento" data-categoria="Serviços reparação">
+              <div class="service-card-content">
+                <h3>Diagnóstico técnico</h3>
+                <p>Análise de falhas e identificação de problemas em equipamentos e sistemas.</p>
+              </div>
+              <div class="service-card-overlay"><span>Peça o orçamento</span></div>
+            </a>
+
+            <a href="#" class="service-card abrir-orcamento" data-categoria="Serviços reparação">
+              <div class="service-card-content">
+                <h3>Reparação de computadores</h3>
+                <p>Assistência técnica para desktops e portáteis com avaliação personalizada.</p>
+              </div>
+              <div class="service-card-overlay"><span>Peça o orçamento</span></div>
+            </a>
+
+            <a href="#" class="service-card abrir-orcamento" data-categoria="Serviços reparação">
+              <div class="service-card-content">
+                <h3>Otimização de sistemas</h3>
+                <p>Melhoria de desempenho, configuração e atualização para uso pessoal ou profissional.</p>
+              </div>
+              <div class="service-card-overlay"><span>Peça o orçamento</span></div>
+            </a>
+
+            <a href="#" class="service-card abrir-orcamento" data-categoria="Serviços reparação">
+              <div class="service-card-content">
+                <h3>Servidores e recuperação</h3>
+                <p>Suporte técnico, avaliação e recuperação de falhas em ambientes mais exigentes.</p>
+              </div>
+              <div class="service-card-overlay"><span>Peça o orçamento</span></div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <div class="cta-footer-wrapper">
+        <section class="section cta-section" id="orcamento">
+          <div class="section-container cta-container">
+            <div>
+              <span class="section-subtitle">Pedido de orçamento</span>
+              <h2>Precisa de assistência técnica?</h2>
+              <p>
+                Para serviços, reparações e suporte, peça o seu orçamento sem compromisso.
+              </p>
+            </div>
+
+            <div class="cta-actions">
+              <a href="#" class="btn-primary abrir-orcamento" data-categoria="Serviços reparação">
+                Pedir orçamento
+              </a>
+              <a href="tel:+351918689962" class="btn-secondary">Ligar agora</a>
+            </div>
+          </div>
+        </section>
+
+        <footer class="footer" id="contactos">
+          <div class="footer-container">
+            <div>
+              <h3>XPC Informática</h3>
+              <p>Rua de Entrecampos, 64 A</p>
+              <p>Lisboa</p>
+              <p><a href="mailto:info@xpc.pt">info@xpc.pt</a></p>
+              <p><a href="tel:+351918689962">+351 91 868 9962</a></p>
+            </div>
+
+            <div>
+              <h3>Links rápidos</h3>
+              <p><a href="#categorias">Categorias</a></p>
+              <p><a href="#produtos">Produtos</a></p>
+              <p><a href="#servicos">Serviços</a></p>
+              <p><a href="#" class="abrir-orcamento" data-categoria="Serviços reparação">Pedir orçamento</a></p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </main>
+
+    <div class="orcamento-overlay" id="orcamentoOverlay">
+      <div class="orcamento-cortina" id="orcamentoCortina">
+        <button class="fechar-orcamento" id="fecharOrcamento" aria-label="Fechar">&times;</button>
+
+        <div class="orcamento-header">
+          <span class="orcamento-tag">Pedido de orçamento</span>
+          <h2>Solicitar orçamento</h2>
+          <p>
+            Preencha os dados abaixo para pedir orçamento apenas para serviços,
+            reparações e suporte técnico.
+          </p>
+        </div>
+
+        <form id="formOrcamento" class="form-orcamento">
+          <div class="form-group">
+            <label for="categoria">Categoria</label>
+            <select id="categoria" name="categoria" required>
+              <option value="">Selecione uma categoria</option>
+              <option value="Serviços reparação">Serviços reparação</option>
+              <option value="Diagnóstico técnico">Diagnóstico técnico</option>
+              <option value="Reparação de computadores">Reparação de computadores</option>
+              <option value="Otimização de sistemas">Otimização de sistemas</option>
+              <option value="Servidores e recuperação">Servidores e recuperação</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite o seu nome" required />
+          </div>
+
+          <div class="form-group">
+            <label for="descricao">Descrição do pedido / erro</label>
+            <textarea id="descricao" name="descricao" rows="6" placeholder="Descreva o serviço ou problema técnico..." required></textarea>
+          </div>
+
+          <div class="botoes-orcamento">
+            <button type="button" class="btn-primary" id="enviarEmail">Enviar por e-mail</button>
+            <button type="button" class="btn-secondary" id="enviarWhatsapp">Enviar por WhatsApp</button>
+          </div>
+
+          <p class="mensagem-form" id="mensagemForm"></p>
+        </form>
+      </div>
+    </div>
+
+    <script src="/site_vendas/misc/js/script.js"></script>
+  </body>
+</html>

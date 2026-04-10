@@ -1,0 +1,8 @@
+<?php
+require_once __DIR__ . '/../inc/functions.php';
+require_admin();
+if ($_SERVER['REQUEST_METHOD'] === 'POST') { update_order_status((int)$_POST['id'], trim($_POST['status'] ?? 'novo')); set_flash('success', 'Status do pedido atualizado.'); redirect_to('admin/orders.php'); }
+$orders = all_orders();
+$pageTitle = 'Gerir pedidos'; include __DIR__ . '/../inc/header.php'; ?>
+<div class="page-wrap"><div class="section-container"><div class="section-header"><h2>Gerir pedidos</h2></div><div class="table-card"><table class="data-table"><thead><tr><th>ID</th><th>Cliente</th><th>Total</th><th>Status</th><th>Morada</th></tr></thead><tbody><?php foreach($orders as $order): ?><tr><td>#<?= (int)$order['id'] ?></td><td><?= e($order['customer_name']) ?><br><?= e($order['customer_email']) ?></td><td><?= number_format((float)$order['total'],2,',','.') ?>€</td><td><form method="post" class="inline-form"><input type="hidden" name="id" value="<?= (int)$order['id'] ?>"><select name="status"><option <?= $order['status']==='novo'?'selected':'' ?>>novo</option><option <?= $order['status']==='processando'?'selected':'' ?>>processando</option><option <?= $order['status']==='enviado'?'selected':'' ?>>enviado</option><option <?= $order['status']==='concluido'?'selected':'' ?>>concluido</option><option <?= $order['status']==='cancelado'?'selected':'' ?>>cancelado</option></select><button type="submit">Guardar</button></form></td><td><?= e($order['address']) ?></td></tr><?php endforeach; ?></tbody></table></div></div></div>
+<?php include __DIR__ . '/../inc/footer.php'; ?>
