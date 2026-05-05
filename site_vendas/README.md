@@ -13,7 +13,7 @@
 - utilizadores
 
 ## Conta admin inicial
-- Email: `kevinleonardomail@hotmail.com`
+- Email: `admin@admin.com`
 - Password: `Admin@123456`
 
 ## Como instalar
