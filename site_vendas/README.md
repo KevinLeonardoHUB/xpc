@@ -16,22 +16,6 @@
 - Email: `admin@admin.com`
 - Password: `Admin@123456`
 
-## Como instalar
-1. Extraia o projeto.
-2. No terminal, dentro da pasta do projeto:
-   ```bash
-   composer install
-   cp .env.example .env
-   ```
-3. Edite o ficheiro `.env` e preencha os dados SMTP reais do Hotmail/Outlook caso queira manter o envio de emails de orçamento.
-4. Inicie localmente:
-   ```bash
-   php -S localhost:8000
-   ```
-5. Abra no navegador:
-   ```bash
-   http://localhost:8000
-   ```
 
 ## Estrutura
 A estrutura foi mantida simples:
