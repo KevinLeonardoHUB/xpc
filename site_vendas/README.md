@@ -1,35 +1,48 @@
-# XPC Informática - Loja em PHP
+# XPC Informática — PHP Online Store
 
-## O que está funcional
-- login
-- registo
-- carrinho
-- checkout com criação de pedido
-- área do cliente
-- painel admin
-- gestão de categorias
-- gestão de produtos
-- gestão de pedidos
-- utilizadores
+A PHP online store with authentication, shopping-cart, checkout, customer and administration areas, product management and stock control.
 
-## Conta admin inicial
+## Implemented features
+
+- Sign-in
+- User registration
+- Shopping cart
+- Checkout with order creation
+- Customer area
+- Administration panel
+- Category management
+- Product management
+- Order management
+- User management
+
+## Initial administrator account
+
+> Change these credentials before using the application outside a local development environment.
+
 - Email: `admin@admin.com`
 - Password: `Admin@123456`
 
+## Structure
 
-## Estrutura
-A estrutura foi mantida simples:
-- raiz com páginas principais
-- `inc/` para ligação à base de dados, funções e layout
-- `admin/` para o painel
-- `storage/database.json` usado como base de dados simples
+The application deliberately uses a simple structure:
 
-## Compra
-A compra funciona com:
-- adicionar ao carrinho
-- atualizar quantidades
-- checkout
-- criação de pedido na base de dados
-- controlo de stock
+- main pages in the project root;
+- `inc/` for the database connection, shared functions and layout;
+- `admin/` for the administration panel;
+- `storage/database.json` as a lightweight data store.
 
-Não há gateway de pagamento online nesta versão. O fluxo fecha o pedido internamente no sistema.
+## Purchase flow
+
+The purchase flow supports:
+
+1. adding products to the cart;
+2. updating quantities;
+3. completing checkout;
+4. creating the order in the data store;
+5. updating stock.
+
+This version does not integrate an online payment gateway. Checkout records and completes the order internally.
+
+## Author
+
+**Quévin Tavares**

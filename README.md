@@ -1,8 +1,8 @@
-# Site de Vendas
+# XPC Sales Website
 
-Site institucional/comercial desenvolvido com HTML, CSS e JavaScript.
+An institutional and commercial website built with HTML, CSS and JavaScript.
 
-## Tecnologias usadas
+## Technologies
 
 - HTML
 - CSS
@@ -10,13 +10,20 @@ Site institucional/comercial desenvolvido com HTML, CSS e JavaScript.
 - Font Awesome
 - Google Fonts
 
-## Estrutura
+## Structure
 
-- `index.html`
-- `misc/css/style.css`
-- `misc/js/script.js`
-- `misc/img/`
+```text
+xpc/
+├── index.html
+├── misc/
+│   ├── css/style.css
+│   ├── js/script.js
+│   └── img/
+└── site_vendas/
+```
 
-## Autor
+The `site_vendas` directory contains the PHP online-store version of the project and has its own README with setup and feature information.
 
-Quévin Tavares
+## Author
+
+**Quévin Tavares**
