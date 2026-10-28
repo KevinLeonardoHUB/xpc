@@ -1,48 +1,39 @@
-# XPC Informática — PHP Online Store
+# XPC — Application setup
 
-A PHP online store with authentication, shopping-cart, checkout, customer and administration areas, product management and stock control.
+[Project overview and preview](../README.md) · This directory contains the PHP store. For the feature walkthrough, see the project README above.
 
-## Implemented features
+## Start the application
 
-- Sign-in
-- User registration
-- Shopping cart
-- Checkout with order creation
-- Customer area
-- Administration panel
-- Category management
-- Product management
-- Order management
-- User management
+Requires PHP 8.0+ and Composer. From this directory:
 
-## Initial administrator account
+```bash
+composer install
+php -S localhost:8000
+```
 
-> Change these credentials before using the application outside a local development environment.
+Open `http://localhost:8000/`. Keep `storage/` writable by PHP. The built-in server is for local development.
 
-- Email: `admin@admin.com`
-- Password: `Admin@123456`
+## Email
 
-## Structure
+Create a local `.env` in this directory; `inc/config.php` reads it directly. Use your SMTP provider's values:
 
-The application deliberately uses a simple structure:
+```dotenv
+MAIL_HOST=smtp.example.com
+MAIL_PORT=587
+MAIL_USERNAME=your-smtp-user
+MAIL_PASSWORD=your-smtp-password
+MAIL_ENCRYPTION=tls
+MAIL_FROM_ADDRESS=store@example.com
+MAIL_FROM_NAME=XPC
+```
 
-- main pages in the project root;
-- `inc/` for the database connection, shared functions and layout;
-- `admin/` for the administration panel;
-- `storage/database.json` as a lightweight data store.
+PHPMailer is installed by Composer. Without its autoloader or working SMTP settings, email delivery fails. Keep `.env` and its credentials out of version control.
 
-## Purchase flow
+## Accounts and data
 
-The purchase flow supports:
-
-1. adding products to the cart;
-2. updating quantities;
-3. completing checkout;
-4. creating the order in the data store;
-5. updating stock.
-
-This version does not integrate an online payment gateway. Checkout records and completes the order internally.
-
-## Author
-
-**Quévin Tavares**
+- `inc/config.php` defines `ADMIN_EMAIL` and `ADMIN_DEFAULT_PASSWORD` for initial administrator creation. The old `admin@admin.com` README example does not match the current configuration.
+- Existing users are loaded from `storage/database.json`. Editing the seed constants does not change their credentials.
+- `inc/db.php` implements the JSON data store; `DB_PATH` mentioning SQLite in the configuration is not used by this data layer.
+- Back up `storage/database.json` before testing changes. Do not remove it to reset a password: it also contains the store's other data.
+- `admin/` holds the administration pages; `inc/` contains shared logic and layout; `misc/` contains styles, scripts and images.
+- Checkout creates an internal order and updates stock; no payment is processed.
